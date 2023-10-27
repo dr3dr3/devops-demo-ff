@@ -1,4 +1,5 @@
-# Feature Flags
+# Feature Flags Solution
+_site
 /ff/out
 /ff/dist
 /node_modules

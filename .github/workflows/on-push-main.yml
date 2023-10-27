@@ -1,0 +1,24 @@
+name: CI-TRUNK
+run-name: Trigger Continuous Integration on PUSH to TRUNK (MAIN)
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+
+  # Continuous integration workflow in 'devops-demo-ff' repo
+  continuous-integration:
+    name: CI
+    if: ${{ vars.CI_PATTERN == 'TBD_MAIN' }}
+    uses: dr3dr3/ss-pipeline/.github/workflows/continuous-integration.yml@main
+    with: 
+      feature: ${{ github.event.head_commit.message }}
+      target-ref: ${{ github.sha }}
+      solution: 'feature-flags'
+    permissions:
+      contents: write
+      pull-requests: write
+      pages: write
+      id-token: write
+    secrets: inherit

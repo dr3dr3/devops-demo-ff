@@ -1,0 +1,29 @@
+{
+    "name": "devops-demo-ff",
+    "version": "0.0.1",
+    "description": "Feature Flags for DevOps Demo",
+    "homepage": "https://github.com/dr3dr3/devops-demo-ff",
+    "license": "MIT",
+    "author": {
+        "name": "André Dreyer",
+        "email": "github@andredreyer.com",
+        "web": "https://andredreyer.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/dr3dr3/devops-demo-ff.git"
+    },
+    "keywords": [
+        "devops",
+        "feature flags"
+    ],
+    "scripts": {
+        "lint": "cd ff && npx featurevisor lint",
+        "test": "cd ff && npx featurevisor test",
+        "build": "cd ff && npx featurevisor build",
+        "export": "cd ff && npx featurevisor site export"
+    },
+    "dependencies": {
+        "@featurevisor/cli": "^0.57.1"
+    }
+}

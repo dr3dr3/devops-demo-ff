@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.57.1",
   "description": "Featurevisor project with YAML definitions",
+  "homepage": "https://dr3dr3.github.io/devops-demo-ff",
   "scripts": {
     "lint": "featurevisor lint",
     "build": "featurevisor build",

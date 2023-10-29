@@ -1,10 +1,10 @@
 {
   "features": {
-    "showCookieBanner": {
+    "showLatestChange": {
       "traffic": [
         {
           "key": "1",
-          "percentage": 100000,
+          "percentage": 50000,
           "allocation": []
         }
       ]

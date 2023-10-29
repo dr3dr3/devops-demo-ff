@@ -18,6 +18,7 @@
         "feature flags"
     ],
     "scripts": {
+        "start": "cd ff && npx featurevisor site serve",
         "lint": "cd ff && npx featurevisor lint",
         "test": "cd ff && npx featurevisor test",
         "build": "cd ff && npx featurevisor build",

@@ -1,0 +1,34 @@
+description: Show latest change from last commit message
+tags:
+  - all
+
+bucketBy:
+  - userId
+
+environments:
+
+  ci:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for everyone 
+        percentage: 100
+
+  stg:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for no-one 
+        percentage: 0
+
+  can:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for 50%
+        percentage: 50
+
+
+  prd:
+    rules:
+      - key: "1"
+        segments: "*" # enabled for no-one 
+        percentage: 0
+

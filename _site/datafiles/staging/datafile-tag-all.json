@@ -1,1 +1,0 @@
-{"schemaVersion":"1","revision":"0.57.1","attributes":[{"key":"deviceId","type":"string","capture":true},{"key":"userId","type":"string","capture":true}],"segments":[],"features":[{"key":"showCookieBanner","bucketBy":"userId","traffic":[{"key":"1","segments":"*","percentage":100000,"allocation":[]}]}]}

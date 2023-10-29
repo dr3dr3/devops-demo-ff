@@ -1,0 +1,5 @@
+feature: showLatestChange
+assertions:
+  - description: "Enabled in CI environment"
+    environment: ci
+    expectedToBeEnabled: true

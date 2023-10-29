@@ -18,11 +18,13 @@
         "feature flags"
     ],
     "scripts": {
-        "start": "cd ff && npx featurevisor site serve",
-        "lint": "cd ff && npx featurevisor lint",
-        "test": "cd ff && npx featurevisor test",
-        "build": "cd ff && npx featurevisor build",
-        "export": "cd ff && npx featurevisor site export"
+        "start": "npx featurevisor build && npx featurevisor serve",
+        "lint": "npx featurevisor lint",
+        "test": "npx featurevisor test",
+        "build": "npx featurevisor build",
+        "export": "npx featurevisor site export",
+        "generate-code": "npx featurevisor generate-code --language typescript --out-dir ./src",
+        "find-duplicate-segments": "npx featurevisor find-duplicate-segments"
     },
     "dependencies": {
         "@featurevisor/cli": "^0.57.1"

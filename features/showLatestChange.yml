@@ -22,8 +22,8 @@ environments:
   can:
     rules:
       - key: "1"
-        segments: "*" # enabled for 50%
-        percentage: 50
+        segments: "*" # enabled for everyone
+        percentage: 100
 
 
   prd:

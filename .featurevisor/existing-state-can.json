@@ -4,7 +4,7 @@
       "traffic": [
         {
           "key": "1",
-          "percentage": 50000,
+          "percentage": 100000,
           "allocation": []
         }
       ]

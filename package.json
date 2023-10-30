@@ -2,7 +2,7 @@
     "name": "devops-demo-ff",
     "version": "0.0.1",
     "description": "Feature Flags for DevOps Demo",
-    "homepage": "https://github.com/dr3dr3/devops-demo-ff",
+    "homepage": "http://localhost:3000",
     "license": "MIT",
     "author": {
         "name": "André Dreyer",
@@ -18,7 +18,7 @@
         "feature flags"
     ],
     "scripts": {
-        "start": "npx featurevisor build && npx featurevisor serve",
+        "start": "npx featurevisor build && npx featurevisor site export && npx featurevisor site serve -p 3001",
         "lint": "npx featurevisor lint",
         "test": "npx featurevisor test",
         "build": "npx featurevisor build",

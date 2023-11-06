@@ -19,16 +19,9 @@ environments:
         segments: "*" # enabled for no-one 
         percentage: 0
 
-  blue:
+  prd:
     rules:
       - key: "1"
         segments: "*" # enabled for everyone
-        percentage: 0
-
-
-  green:
-    rules:
-      - key: "1"
-        segments: "*" # enabled for no-one 
         percentage: 0
 
